@@ -1,17 +1,5 @@
-.linkActive {
-    border-bottom: 2px solid black;
-}
 
-.link {
-    transition: border-bottom 0.3s;
-    border-bottom: 2px solid transparent;
-}
-
-.link:hover {
-    color: #1F2937;
-    border-bottom: 2px solid black;
-}
-
+  
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

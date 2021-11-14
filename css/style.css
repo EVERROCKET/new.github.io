@@ -1,26 +1,41 @@
-.linkActive {
+.tabActive {
   border-bottom: 2px solid black;
 }
 
-.link {
+.tab {
   transition: border-bottom 0.3s;
   border-bottom: 2px solid transparent;
 }
 
-.link:hover {
+.tab:hover {
   color: #1F2937;
   border-bottom: 2px solid black;
 }
 
-.styled {
+.link {
   border-bottom: 1px solid #c9e27f;
-  box-shadow: inset 0 -5px 0 #c9e27f;
+  box-shadow: inset 0 -7px 0 #c9e27f;
   transition: all .25s ease-in-out;
-  padding: 2px 2px 0 2px;
+  padding: 2px 2px 1px 2px;
   /* color: black; */
 }
 
-.styled:hover {
+.link:hover {
+    background-size: 100% 88%;
+    background-color: #c9e27f;
+    text-decoration: none;
+    /* color: black; */
+}
+
+.SmLink {
+  border-bottom: 1px solid #c9e27f;
+  box-shadow: inset 0 -2px 0 #c9e27f;
+  transition: all .25s ease-in-out;
+  padding: 1px 1px 1px 1px;
+  /* color: black; */
+}
+
+.SmLink:hover {
     background-size: 100% 88%;
     background-color: #c9e27f;
     text-decoration: none;

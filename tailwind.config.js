@@ -1,6 +1,9 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    '*.html',
+    '*.js'
+  ],
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -8,9 +11,6 @@ module.exports = {
         'inter': 'Inter' 
       }
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }

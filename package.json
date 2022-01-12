@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "autoprefixer": "^10.3.1",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.7"
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
   },
-  "devDependencies": {},
   "scripts": {
-    "build-css": "tailwindcss build -i style.css -o css/style.css"
+    "build-css": "tailwindcss build -i style.css -o css/style.css",
+    "dev": "vite"
   },
   "author": "Junyu Huang",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^2.7.7"
+  }
 }

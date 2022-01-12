@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Predictive Churn</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,24 +12,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    'robo': 'Roboto Slab',
+                    'inter': 'Inter' 
+                }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    <nav class="max-w-5xl mx-auto">
-        <div class="mt-10">
-            <div class="grid grid-cols-2 items-center">
-                <div>
-                    <a href="/">
-                        <svg class="fill-current text-gray-800 hover:text-gray-700 transition duration-200" width="40px" height="40px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <polygon id="Fill-10" points="0 26 26 26 26 0 0 0"></polygon>
-                            <path d="M10.9545539,6 L10.9545539,19.9997496 L4,19.9997496 L4,16.5001252 L7.47696744,16.5001252 L7.47696744,6 L10.9545539,6 Z M15.9770603,20 L12.4994738,20 L12.4994738,6.00025042 L15.9770603,6.00025042 L15.977,11.638 L21,11.6388402 L21,19.9997496 L17.5224135,19.9997496 L17.5224135,15.1390906 L15.977,15.139 L15.9770603,20 Z" id="Combined-Shape" fill="#FFFFFF"></path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="font-inter justify-self-end">
-                    <a class="py-1 mx-3 tabActive text-gray-800 hover:text-gray-800" href="/" aria-current="page">Work</a>
-                    <a class="py-1 mx-3 text-gray-800 tab" href="/about">About</a>
-                </div>
+    <nav>
+        <div class="max-w-5xl mx-auto pt-10">
+            <div class="flex justify-between">
+            <!-- logo -->
+            <div>
+                <a href="/">
+                    <svg class="fill-current text-gray-800 hover:text-gray-700 transition duration-200" width="40px" height="40px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <polygon id="Fill-10" points="0 26 26 26 26 0 0 0"></polygon>
+                        <path d="M10.9545539,6 L10.9545539,19.9997496 L4,19.9997496 L4,16.5001252 L7.47696744,16.5001252 L7.47696744,6 L10.9545539,6 Z M15.9770603,20 L12.4994738,20 L12.4994738,6.00025042 L15.9770603,6.00025042 L15.977,11.638 L21,11.6388402 L21,19.9997496 L17.5224135,19.9997496 L17.5224135,15.1390906 L15.977,15.139 L15.9770603,20 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    </svg>
+                </a>
             </div>
+        
+            <!-- secondary nav -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a class="py-1 mx-3 text-gray-800 border-b-2 border-gray-800" href="" aria-current="page">Work</a>
+                <a class="py-1 mx-3 text-gray-800 border-transparent transition hover: border-b-2 hover:border-gray-800 hover: duration-150" href="/about">About</a>
+            </div>
+        
+            <!-- mobile button goes here -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                </button>
+            </div>
+            </div>
+        </div>
+        
+        <!-- mobile menu -->
+        <div id="mobile-menu" class= "hidden md:hidden pt-5 rounded-md divide-y divide-slate-100">
+            <a href="" class="flex flex-row py-6 items-center justify-center font-bold text-sm hover:bg-slate-100">
+                <p class="mr-2">&#128187;</p>
+                Work
+            </a>
+            <a href="#" class="flex flex-row py-6 items-center justify-center text-sm  hover:bg-slate-100">
+                <p class="mr-2">&#128075;</p>
+                About
+            </a>
         </div>
     </nav>
     <div class="max-w-5xl mx-auto">
@@ -188,7 +225,8 @@
         </div>
     </div>
     <footer class="py-6 relative inset-x-0 bottom-0"> 
-        <p class="text-center text-gray-700">© 2021 Junyu Huang. Built with <a class="SmLink font-medium" href="https://tailwindcss.com/" target="_blank">Tailwind</a>.</p>
+        <p class="text-center text-xs lg:text-sm text-gray-700 ">© 2021 Junyu Huang. Built with <a class="underline font-medium bg-transparent text-gray-900 decoration-amber-300 decoration-2 underline-offset-2 transition duration-300 hover:bg-amber-300" href="https://tailwindcss.com/" target="_blank">Tailwind</a>.</p>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

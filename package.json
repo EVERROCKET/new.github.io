@@ -15,6 +15,7 @@
   "author": "Junyu Huang",
   "license": "ISC",
   "dependencies": {
+    "tw-elements": "^1.0.0-alpha8",
     "vite": "^2.7.7"
   }
 }

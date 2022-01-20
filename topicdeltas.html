@@ -4,17 +4,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Topic Deltas</title>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    'robo': 'Roboto Slab',
+                    'inter': 'Inter' 
+                }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
     <nav>
-        <div class="max-w-5xl mx-auto pt-10 px-10">
+        <div class="max-w-6xl mx-auto pt-10 px-10">
             <div class="flex justify-between">
             <!-- logo -->
             <div>
@@ -45,7 +58,7 @@
         
         <!-- mobile menu -->
         <div id="mobile-menu" class= "hidden md:hidden pt-5 rounded-md divide-y divide-slate-100 px-10">
-            <a href="" class="flex flex-row py-6 items-center justify-center font-bold text-sm hover:bg-slate-100">
+            <a href="" class="flex flex-row py-6 items-center justify-center  text-sm hover:bg-slate-100">
                 <p class="mr-2">&#128187;</p>
                 Work
             </a>
@@ -55,21 +68,21 @@
             </a>
         </div>
     </nav>
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto px-16">
         <div class="mt-12 py-12 mx-28">
-            <h1 class="text-5xl font-robo" >Topic Deltas</h1>
+            <h1 class="text-4xl font-robo" >Topic Deltas - Surfacing Market-Moving Signals in Earnings Calls</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">Accrete, a fintech startup, focused on using AI to help investors make better investing decisions. Topic Deltas, one of the product offerings, was a dashboard aiming to surface market-moving insights from company earnings calls. I led the design end-to-end, from conducting user interviews to iterating on prototypes to delivering handoffs. I collaborated with 1 Product Manager, 2 Data Scientists, and 3 Engineers from February 2019 to August 2019.</p>
         </div>
     </div>
     <div class="w-full h-auto bg-gray-50">
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-6xl mx-auto">
             <img class="py-12" src="assets/topicdeltas/Transcript.png" alt="">
         </div>
     </div>
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto px-16">
         <div class="pt-20 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >The Challenge</h1>
-            <h1 class="mt-1 text-2xl font-bold font-robo text-gray-800" >Augmenting human expertise in earnings calls analysis</h1>
+            <h1 class="mt-1 text-3xl  font-robo text-gray-800" >Augmenting human expertise in earnings calls analysis</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">The internet has made huge volumes of company data readily available to investors. To generate macro-level as well as company-specific insights in a timely manner, however, has been increasingly challenging due to the information overload in the financial markets.</p>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">If an investor were to go through all the earnings transcripts in the past 8 quarters of all the companies in the S&P 500 Index, it could take weeks to decipher the insightful information across different sectors, industries, and companies. In this project, our goal was to create a tool that helps investors discover investment opportunities from earnings calls transcripts in an efficient and scalable way.</p>
         </div>
@@ -79,17 +92,17 @@
         </p>
         <div class="pt-20 pb-12 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >Discovery Research</h1>
-            <h1 class="mt-1 text-2xl font-bold font-robo text-gray-800" >Understanding how investors analyze earnings reports and make investing decisions</h1>
+            <h1 class="mt-1 text-3xl  font-robo text-gray-800" >Understanding how investors analyze earnings reports and make investing decisions</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">I talked with 5 domain experts to understand the workflow of analyzing earnings reports and the challenges during the process. Below is the summary of the findings:</p>
         </div>
         <img src="assets/topicdeltas/UserResearch.png" alt="">
         <div class="pt-12 mx-28">
             <div class="pt-12 inline-flex space-x-4">
                 <div>
-                    <h1 class="rounded-full h-7 w-7 flex items-center justify-center font-inter font-bold text-sm text-center text-gray-50 bg-blue-500">1</h1>
+                    <h1 class="rounded-full h-7 w-7 flex items-center justify-center font-inter  text-sm text-center text-gray-50 bg-blue-500">1</h1>
                 </div>
                 <div>
-                    <h1 class="inline text-xl font-bold font-robo text-gray-800">Extracting insights from scattered information is difficult</h1>     
+                    <h1 class="inline text-xl font-semibold font-robo text-gray-800">Extracting insights from scattered information is difficult</h1>     
                     <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">
                         Oftentimes, investing signals lie within the quarterly changes in some aspects of a company or changes across companies in a given quarter. These data are scattered and can take a long time for investors to aggregate and draw comparisons.
                     </p>
@@ -97,10 +110,10 @@
             </div>
             <div class="pt-12 inline-flex space-x-4">
                 <div>
-                    <h1 class="rounded-full h-7 w-7 flex items-center justify-center font-inter font-bold text-sm text-center text-gray-50 bg-blue-500">2</h1>
+                    <h1 class="rounded-full h-7 w-7 flex items-center justify-center font-inter  text-sm text-center text-gray-50 bg-blue-500">2</h1>
                 </div>
                 <div>
-                    <h1 class="inline text-xl font-bold font-robo text-gray-800">Nuances are hidden in the language</h1>     
+                    <h1 class="inline text-xl font-semibold font-robo text-gray-800">Nuances are hidden in the language</h1>     
                     <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">
                         Remarks by a company in the earnings calls are carefully prepared, and therefore slightly different language on the same topic can have significant implications. To quantify these nuances, however, is no easy task.
                     </p>
@@ -108,10 +121,10 @@
             </div>
             <div class="pt-12 inline-flex space-x-4">
                 <div>
-                    <h1 class="rounded-full h-7 w-7 flex items-center justify-center font-inter font-bold text-sm text-center text-gray-50 bg-blue-500">3</h1>
+                    <h1 class="rounded-full h-7 w-7 flex items-center justify-center font-inter  text-sm text-center text-gray-50 bg-blue-500">3</h1>
                 </div>
                 <div>
-                    <h1 class="inline text-xl font-bold font-robo text-gray-800">Important topics change from quarter to quarter</h1>     
+                    <h1 class="inline text-xl font-semibold font-robo text-gray-800">Important topics change from quarter to quarter</h1>     
                     <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">
                         Industry trends across companies develop rapidly as the earnings season progresses, and topics that have significant implications change over time. This dynamic nature makes it difficult to capture the trends and determine what to follow in a timely manner. 
                     </p>
@@ -124,18 +137,18 @@
         </div>
         <div class="pt-20 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >Ideation & Explorations</h1>
-            <h1 class="mt-1 text-2xl font-bold font-robo text-gray-800" >How might we help investors get the information they need as quickly as possible?</h1>
+            <h1 class="mt-1 text-3xl  font-robo text-gray-800" >How might we help investors get the information they need as quickly as possible?</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">We started exploring ideas by generating user stories based on the discovery insights. How might we surface the information investors want to see quickly?</p>
         </div>
         <img class="pt-12" src="assets/topicdeltas/UserQueries.png" alt="">
         <div class="pt-12 mx-28">
             <p class="mt-3 text-base font-inter text-gray-700">Stories were then summarized into three categories:</p>
             <ul class="list-disc list-inside mt-3 text-base font-inter text-gray-700 leading-relaxed">
-                <li><span class="font-bold">Company:</span> Information related to a company’s performance</li>
-                <li><span class="font-bold">Industry:</span> Information related to an industry's performance</li>
-                <li><span class="font-bold">Topic:</span> Information about a subject discussed by companies and industries</li>
+                <li><span class="">Company:</span> Information related to a company’s performance</li>
+                <li><span class="">Industry:</span> Information related to an industry's performance</li>
+                <li><span class="">Topic:</span> Information about a subject discussed by companies and industries</li>
             </ul>
-            <h1 class="mt-12 text-2xl font-bold font-robo text-gray-800">Translating unstructured data into insights</h1>     
+            <h1 class="mt-12 text-2xl  font-robo text-gray-800">Translating unstructured data into insights</h1>     
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">
                 I worked with the data scientists to understand the technical feasibility of our ideas and what we were able to capture from the unstructured data from earnings transcripts. This allowed me to ideate on the designs with a realistic perspective on data capabilities.                      
             </p>
@@ -146,25 +159,25 @@
         </div> 
     </div>
     <div class="mt-12 w-full h-auto bg-gray-50">
-        <div class="py-12 max-w-5xl mx-auto">
+        <div class="py-12 max-w-6xl mx-auto">
             <img class="pt-12" src="assets/topicdeltas/EarlyIterations.png" alt="">
             <p class="mt-2 text-center text-sm italic text-gray-500">
                 Early mockup iterations            
             </p>
         </div>
     </div>
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto px-16">
         <div class="mt-12 mx-28">
-            <h1 class="mt-12 text-2xl font-bold font-robo text-gray-800">Findings from beta testing</h1>     
+            <h1 class="mt-12 text-2xl  font-robo text-gray-800">Findings from beta testing</h1>     
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">
                 With the early design iterations, we were able to identify some key insights into how users would use the product to find what they need in the investment process:                 
             </p>
             <div class="pt-12 inline-flex space-x-4">
                 <div>
-                    <h1 class="rounded-full h-7 w-7 flex items-center justify-center font-inter font-bold text-sm text-center text-gray-50 bg-blue-500">1</h1>
+                    <h1 class="rounded-full h-7 w-7 flex items-center justify-center font-inter  text-sm text-center text-gray-50 bg-blue-500">1</h1>
                 </div>
                 <div>
-                    <h1 class="inline text-xl font-bold font-robo text-gray-800">Context is important in the sentiment for a topic</h1>     
+                    <h1 class="inline text-xl font-semibold font-robo text-gray-800">Context is important in the sentiment for a topic</h1>     
                     <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">
                         Users found it difficult to trust the system on sentiment scoring on a topic or company without knowing the context in the transcript. They needed to look at the corresponding paragraphs to validate. 
                     </p>
@@ -172,10 +185,10 @@
             </div>
             <div class="pt-12 inline-flex space-x-4">
                 <div>
-                    <h1 class="rounded-full h-7 w-7 flex items-center justify-center font-inter font-bold text-sm text-center text-gray-50 bg-blue-500">2</h1>
+                    <h1 class="rounded-full h-7 w-7 flex items-center justify-center font-inter  text-sm text-center text-gray-50 bg-blue-500">2</h1>
                 </div>
                 <div>
-                    <h1 class="inline text-xl font-bold font-robo text-gray-800">Sentiment changes matter more than the sentiment itself
+                    <h1 class="inline text-xl font-semibold font-robo text-gray-800">Sentiment changes matter more than the sentiment itself
                     </h1>     
                     <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">
                         Since companies always try to sound positive in earnings calls, the sentiment on a topic in a given quarter does not provide much on where the company is heading. It’s the shift in sentiment from quarter to quarter that the users care more about. 
@@ -184,13 +197,13 @@
             </div>
             <div class="pt-20">
                 <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >FINAL DESIGN</h1>
-                <h1 class="mt-1 text-2xl font-bold font-robo text-gray-800" >Discovering hidden nuances that move the markets</h1>
+                <h1 class="mt-1 text-3xl  font-robo text-gray-800" >Discovering hidden nuances that move the markets</h1>
                 <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">Topic Deltas reads through earnings transcripts in a granular bottom-up way measuring topical sentiment changes across calls and between industry peers, giving investors the unique knowledge that scales their expertise.</p>
             </div>
         </div>
         <img class="my-12" src="assets/topicdeltas/Overview_Industry.png" alt="">
         <div class="mx-28">
-            <h1 class="text-2xl font-bold font-robo text-gray-800" >Monitoring the important trends at a glance</h1>
+            <h1 class="text-2xl  font-robo text-gray-800" >Monitoring the important trends at a glance</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">One of the biggest challenges for analysts or investors is tracking the macro trends across sectors, industries, and companies. The three widgets on the top allow users to find what's trending from a macro-level perspective and decide where to pay attention to.</p>
         </div>
         <img class="mt-12" src="assets/topicdeltas/Trending.png" alt="">
@@ -198,34 +211,34 @@
         <img class="mt-12" src="assets/topicdeltas/IndustryOverview.png" alt="">
         <img class="mt-12 rounded" src="assets/topicdeltas/Trend.png" alt="">
         <div class="mt-12 mx-28">
-            <h1 class="text-2xl font-bold font-robo text-gray-800">Saving hours of manual analysis with sentiment aggregation and comparisons</h1>
+            <h1 class="text-2xl  font-robo text-gray-800">Saving hours of manual analysis with sentiment aggregation and comparisons</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">Topic Deltas analyzes topical and aggregate sentiments for each company right after the earnings call. Users can gain an edge by finding out what companies and topics have the most sentiment changes from the last quarter as soon as the company announces.</p>
         </div>
         <img class="mt-12 rounded" src="assets/topicdeltas/CallsList.png" alt="">
         <img class="mt-12 rounded" src="assets/topicdeltas/Calls.png" alt="">
         <div class="mt-12 mx-28">
-            <h1 class="text-2xl font-bold font-robo text-gray-800">All the data users need in one place</h1>
+            <h1 class="text-2xl  font-robo text-gray-800">All the data users need in one place</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">Topic Deltas identifies key themes by comparing and contrasting granular topics over time and against those referenced by industry peers. What's driving the industry markets? How the industry has evolved over time? Who has under or outperformed? Users can find all of the important information in one place.</p>
         </div>
         <img class="mt-12 rounded" src="assets/topicdeltas/Industry_1.png" alt="">
         <img class="mt-12 rounded" src="assets/topicdeltas/Industry_2.png" alt="">
         <img class="mt-12 rounded" src="assets/topicdeltas/Delta.png" alt="">
         <div class="mt-12 mx-28">
-            <h1 class="text-2xl font-bold font-robo text-gray-800">Surfacing signals on macro and micro levels</h1>
+            <h1 class="text-2xl  font-robo text-gray-800">Surfacing signals on macro and micro levels</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">Topic Deltas covers all the topical sentiments within an industry and allows users to dig deeper into the sentiment history in the previous quarters for every topic and company.</p>
         </div>
         <img class="mt-12 rounded" src="assets/topicdeltas/AllTopics.png" alt="">
         <img class="mt-12 rounded" src="assets/topicdeltas/OpertaingIncome.png" alt="">
         <img class="mt-12 rounded" src="assets/topicdeltas/Topics.png" alt="">
         <div class="mt-12 mx-28">
-            <h1 class="text-2xl font-bold font-robo text-gray-800">Gaining user trust with transparency</h1>
+            <h1 class="text-2xl  font-robo text-gray-800">Gaining user trust with transparency</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">On the Earnings Calls page, users can compare and contrast the key statements in the call classified by different topics, as well as the historical performance for each topic. The semantic details of nuanced language not only provide the transparency of how the machine learning model works behind the scenes, but also enable investors to find patterns that were previously invisible.</p>
         </div>
         <img class="mt-12 rounded" src="assets/topicdeltas/Transcript.png" alt="">
         <img class="mt-12 rounded" src="assets/topicdeltas/Snippets.png" alt="">
         <div class="py-20 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >REFLECTIONS</h1>
-            <h1 class="mt-1 text-2xl font-bold font-robo text-gray-800">A beginner’s mindset</h1>
+            <h1 class="mt-1 text-3xl  font-robo text-gray-800">A beginner’s mindset</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">I had little knowledge about investing prior to joining the team, and this project had been a challenging but rewarding learning experience for me. I learned to lean on the experts on my team and clients to get myself familiar with the domain and validate my assumptions during design iterations. Having a beginner’s mindset and being comfortable asking for help allowed me to understand the problems quickly and deliver solutions that meet both user and business expectations. </p>
         </div>
     </div>

@@ -4,8 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Predictive Churn</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
 </head>
 <body>
     <nav>
-        <div class="max-w-5xl mx-auto pt-10 px-10">
+        <div class="max-w-6xl mx-auto pt-10 px-10">
             <div class="flex justify-between">
             <!-- logo -->
             <div>
@@ -68,7 +68,7 @@
             </a>
         </div>
     </nav>
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto px-16">
         <div class="mt-12 py-12 mx-28">
             <h1 class="text-4xl font-robo" >Predictive Churn - Helping Marketers Reduce User Disengagement and Drive Retention Using AI</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">Braze, a leader in customer engagement, has been investing in leveraging artificial intelligence (AI) to enable marketers to advance campaign strategies. I led the design for Predictive Churn, Braze's first AI-powered product that enables marketers to create models that predict user churning (disengagement). I was tasked with redesigning the beta version for the public launch from April 2020 to August 2020. I collaborated with 1 Product Manager, 1 User Researcher, 2 Data Scientists, and 4 Engineers.  
@@ -78,15 +78,15 @@
     <div class="w-full h-auto">
             <img class="py-12" src="assets/predictions/churn-final.png" alt="">
     </div>
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto px-16">
         <div class="pt-20 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >The Challenge</h1>
-            <h1 class="mt-1 text-3xl font-bold font-robo text-gray-800" >Marketers have an increasing need for strategizing campaigns with data analytics but are hindered by dependency on technical teams</h1>
+            <h1 class="mt-1 text-3xl font-robo text-gray-800" >Marketers have an increasing need for strategizing campaigns with data analytics but are hindered by dependency on technical teams</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">As a marketer, the goal is to engage and retain users by sending them the right message at the right time. However, to do this at scale is no easy task. It requires sophisticated machine learning models to turn the data into actionable insights at a user level. Marketers often rely on a team of data scientists to build these models. With resource constraints and sometimes lack of priority, it can take months to see any model results. With Predictive Churn, we aimed to make it as easy as possible for marketers to create predictive models on their own, so they can focus on engaging and retaining users with data insights.</p>
         </div>
         <div class="pt-20 pb-12 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >Preliminary Research</h1>
-            <h1 class="mt-1 text-3xl font-bold font-robo text-gray-800" >Understanding the market and user expectations</h1>
+            <h1 class="mt-1 text-3xl font-robo text-gray-800" >Understanding the market and user expectations</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">I started by looking at relevant products on the market to get a better understanding of how AI has been used in marketing technology. This provided me with a perspective on the larger context in which our project was scoped. </p>
         </div>
         <img class="border border-gray-200" src="assets/predictions/competitors.png" alt="">
@@ -95,7 +95,7 @@
         </p>
         <div class="pt-20 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >Beta Testing</h1>
-            <h1 class="mt-1 text-3xl font-bold font-robo text-gray-800" >Finding the gaps between user needs and the beta</h1>
+            <h1 class="mt-1 text-3xl font-robo text-gray-800" >Finding the gaps between user needs and the beta</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">We interviewed 8 beta users and had them walk us through how they’ve used the initial version. Below is a summary of the pain points:</p>
             <ul class="pl-5 mt-3 text-base font-inter text-gray-800 leading-relaxed list-disc">
                 <li>Users found it unintuitive to define churn the way they wanted with the traditional segmentation filters</li>
@@ -107,10 +107,10 @@
     <div class="w-full h-auto">
         <img class="pt-12" src="assets/predictions/beta.png" alt="">
     </div> 
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto px-16">
         <div class="pt-20 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >Design Goals</h1>
-            <h1 class="mt-1 text-3xl font-bold font-robo text-gray-800" >Enable marketers to create predictive models as quickly as possible, while providing transparency that promotes trust in the product</h1>
+            <h1 class="mt-1 text-3xl font-robo text-gray-800" >Enable marketers to create predictive models as quickly as possible, while providing transparency that promotes trust in the product</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">A typical marketer has little knowledge about machine learning, so we need to make the process of creating a prediction model and analyzing the results as simple as possible, while maintaining a level of transparency that builds trust. The goals for the iterations are broken down to:</p>
             <ul class="pl-5 mt-3 text-base font-inter text-gray-800 leading-relaxed list-disc">
                 <li>Provide better guidance on how to create a predictive model</li>
@@ -123,7 +123,7 @@
         </p>
         <div class="pt-20 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >Ideation</h1>
-            <h1 class="mt-1 text-3xl font-bold font-robo text-gray-800" >How might we simplify the flow of creating a model and encourage actions with richer insights in results?</h1>
+            <h1 class="mt-1 text-3xl font-robo text-gray-800" >How might we simplify the flow of creating a model and encourage actions with richer insights in results?</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">We hosted a sketching session with engineers, data scientists, product managers, and designers from other product verticals. This collaborative format allowed us to bring different and fresh perspectives and ideas to the table. I started gathering all the ideas and converging them into multiple concepts.</p>
         </div>
         <img class="pt-12" src="assets/predictions/sketches.png" alt="">
@@ -137,7 +137,7 @@
     <div class="w-full h-auto">
         <img class="pb-12" src="assets/predictions/churn-definition-exp.png" alt="">
     </div> 
-    <div class="max-w-5xl mx-auto" >
+    <div class="max-w-6xl mx-auto px-16">
         <div class="pb-12 mx-28">
             <p class="text-base font-inter text-gray-700 leading-relaxed">For the Prediction Details page, we focused on helping marketers better understand the results and making it easy to target the users with they want. Below are some explorations.</p>
         </div>
@@ -145,19 +145,19 @@
     <div class="w-full h-auto">
         <img  src="assets/predictions/details-exp.png" alt="">
     </div>
-    <div class="max-w-5xl mx-auto" >
+    <div class="max-w-6xl mx-auto px-16">
         <div class="pt-20 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >Iterations through testing</h1>
-            <h1 class="mt-1 text-3xl font-bold font-robo text-gray-800" >Work towards a more intuitive experience with analyzing the data</h1>
+            <h1 class="mt-1 text-3xl font-robo text-gray-800" >Work towards a more intuitive experience with analyzing the data</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">We conducted usability testing with 9 customers over Zoom to test how users would interact with the model results. The conversations helped us understand where users were stuck, and further confirmed our initial discovery finding that users expect to see information about what the model is taking into account to generate results.</p>
         </div>
     </div>
     <div class="w-full h-auto">
         <img class="pt-12" src="assets/predictions/iterations.png" alt="">
     </div>
-    <div class="max-w-5xl mx-auto" >
+    <div class="max-w-6xl mx-auto px-16">
         <div class="pt-12 mx-28">
-            <h1 class="mt-1 text-3xl font-bold font-robo text-gray-800" >Understanding where the friction occurred</h1>
+            <h1 class="mt-1 text-3xl font-robo text-gray-800" >Understanding where the friction occurred</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">After the testing, we launched the first version of Predictive Churn. In the first few months, we noticed that almost 70% of the users who started the creation process left without successfully building one. To understand why, we observed over 100 user sessions on FullStory. </p>
         </div>
         <img class="pt-12" src="assets/predictions/fullstory.png" alt="">
@@ -169,49 +169,49 @@
             <img class="pt-12" src="assets/predictions/errors.png" alt="">
         </div>
         <div class="pt-12 mx-28">
-            <h1 class="mt-1 text-3xl font-bold font-robo text-gray-800" >Providing a better focus on each task at a time with a step-by-step flow</h1>
+            <h1 class="mt-1 text-3xl font-robo text-gray-800" >Providing a better focus on each task with a step-by-step flow</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">With this iteration, I separated each configuration for creating a prediction into a one-page step, allowing users to focus on one task at a time without getting distracted by errors from other settings. We tested this design with 12 users, and all of them were able to complete the tasks and satisfied with the flow.</p>
         </div>
     </div>
     <div class="w-full h-auto">
         <img class="pt-12" src="assets/predictions/steps.png" alt="">
     </div>
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto px-16">
         <div class="pt-20 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >Final Design</h1>
-            <h1 class="mt-1 text-3xl font-bold font-robo text-gray-800" >The debut of Braze’s first AI-powered product</h1>
+            <h1 class="mt-1 text-3xl font-robo text-gray-800" >The debut of Braze’s first AI-powered product</h1>
             <p class="mt-3 text-base font-inter text-gray-700">Below is a walkthrough of the final design. </p>
         </div>
     </div>
     <div class="w-full h-auto">
         <img class="py-12" src="assets/predictions/final-v2.png" alt="">
     </div>
-    <div class="max-w-5xl mx-auto space-y-12">
+    <div class="max-w-6xl mx-auto px-16">
         <div class="mx-28">
-            <h1 class="mt-1 text-xl font-bold font-robo text-gray-800" >#1 Define what churn means to your business</h1>
+            <h1 class="text-xl font-robo text-gray-800" >#1 Define what churn means to your business</h1>
         </div>
-        <video autoplay loop muted class="mt-12 border border-gray-200 shadow-xl" src="assets/predictions/create-churn-final.mp4" ></video>
+        <video autoplay loop muted class="mt-6 border border-gray-200 shadow-xl" src="assets/predictions/create-churn-final.mp4" ></video>
         <div class="mx-28">
-            <h1 class="mt-1 text-xl font-bold font-robo text-gray-800" >#2 Specify the audience you want to predict churn risk for</h1>
+            <h1 class="pt-12 text-xl font-robo text-gray-800" >#2 Specify the audience you want to predict churn risk for</h1>
         </div>
-        <video autoplay loop muted class="mt-12 border border-gray-200 shadow-xl" src="assets/predictions/create-audience-final.mp4" ></video>
+        <video autoplay loop muted class="mt-6 border border-gray-200 shadow-xl" src="assets/predictions/create-audience-final.mp4" ></video>
         <div class="mx-28">
-            <h1 class="mt-1 text-xl font-bold font-robo text-gray-800" >#3 Build the prediction and let us do the magic</h1>
+            <h1 class="pt-12 text-xl font-robo text-gray-800" >#3 Build the prediction and let us do the magic</h1>
         </div>
-        <video autoplay loop muted class="mt-12 border border-gray-200 shadow-xl" src="assets/predictions/create-build-final.mp4" ></video>
+        <video autoplay loop muted class="mt-6 border border-gray-200 shadow-xl" src="assets/predictions/create-build-final.mp4" ></video>
         <div class="mx-28">
-            <h1 class="mt-1 text-xl font-bold font-robo text-gray-800" >#4 Interact with the results and see estimated accuracy</h1>
+            <h1 class="pt-12 text-xl font-robo text-gray-800" >#4 Interact with the results and see estimated accuracy</h1>
         </div>
-        <video autoplay loop muted class="mt-12 border border-gray-200 shadow-xl" src="assets/predictions/analytics-slider-final.mp4" ></video>
+        <video autoplay loop muted class="mt-6 border border-gray-200 shadow-xl" src="assets/predictions/analytics-slider-final.mp4" ></video>
         <div class="mx-28">
-            <h1 class="mt-1 text-xl font-bold font-robo text-gray-800" >#5 Create a segment and target users at risk of churning</h1>
+            <h1 class="pt-12 text-xl font-robo text-gray-800" >#5 Create a segment and target users at risk of churning</h1>
         </div>
-        <video autoplay loop muted class="my-12 border border-gray-200 shadow-xl" src="assets/predictions/analytics-segment-final.mp4" ></video>
+        <video autoplay loop muted class="mt-6 pb-6 border border-gray-200 shadow-xl" src="assets/predictions/analytics-segment-final.mp4" ></video>
     </div>
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto px-16">
         <div class="pt-20 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >IMPACT</h1>
-            <h1 class="mt-1 text-3xl font-bold font-robo text-gray-800" >Win-win for both customers and business</h1>
+            <h1 class="mt-1 text-3xl font-robo text-gray-800" >Win-win for both customers and business</h1>
             <ul class="pl-5 mt-3 text-base font-inter text-gray-800 leading-relaxed list-disc">
                 <li>Success rate in creating predictions has increased to 63% from 30%</li>
                 <li>Median time to create a prediction is reduced by 24%</li>
@@ -220,7 +220,7 @@
         </div>
         <div class="py-20 mx-28">
             <h1 class="text-base uppercase font-inter text-gray-400 font-semibold" >REFLECTIONS</h1>
-            <h1 class="mt-1 text-2xl font-bold font-robo text-gray-800">Embrace ambiguity</h1>
+            <h1 class="mt-1 text-3xl font-robo text-gray-800">Embrace ambiguity</h1>
             <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">There was a lot of ambiguity in designing a technical product such as Predictive Churn for a non-technical audience, and especially for Braze, it was our first end-to-end AI-powered product offering. I learned to stick with talking to users and observing the data to understand the user problems. By putting users first, I was able to get answers to many challenging questions and find confidence in my decision-making. </p>
         </div>
     </div>

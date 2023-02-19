@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.7"
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.2"
   },
   "scripts": {
     "build-css": "tailwindcss build -i style.css -o css/style.css",
@@ -15,7 +17,6 @@
   "author": "Junyu Huang",
   "license": "ISC",
   "dependencies": {
-    "tw-elements": "^1.0.0-alpha8",
-    "vite": "^2.7.7"
+    "tw-elements": "^1.0.0-alpha8"
   }
 }

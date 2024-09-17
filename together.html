@@ -30,35 +30,35 @@
     <nav>
         <div class="max-w-6xl mx-auto pt-10 px-10">
             <div class="flex justify-between">
-            <!-- logo -->
-            <div>
-                <a href="/">
-                    <svg class="fill-current text-gray-800 hover:text-gray-700 transition duration-200" width="40px" height="40px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <polygon id="Fill-10" points="0 26 26 26 26 0 0 0"></polygon>
-                        <path d="M10.9545539,6 L10.9545539,19.9997496 L4,19.9997496 L4,16.5001252 L7.47696744,16.5001252 L7.47696744,6 L10.9545539,6 Z M15.9770603,20 L12.4994738,20 L12.4994738,6.00025042 L15.9770603,6.00025042 L15.977,11.638 L21,11.6388402 L21,19.9997496 L17.5224135,19.9997496 L17.5224135,15.1390906 L15.977,15.139 L15.9770603,20 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <!-- logo -->
+                <div>
+                    <a href="/">
+                        <svg class="fill-current text-gray-800 hover:text-gray-700 transition duration-200" width="40px" height="40px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <polygon id="Fill-10" points="0 26 26 26 26 0 0 0"></polygon>
+                            <path d="M10.9545539,6 L10.9545539,19.9997496 L4,19.9997496 L4,16.5001252 L7.47696744,16.5001252 L7.47696744,6 L10.9545539,6 Z M15.9770603,20 L12.4994738,20 L12.4994738,6.00025042 L15.9770603,6.00025042 L15.977,11.638 L21,11.6388402 L21,19.9997496 L17.5224135,19.9997496 L17.5224135,15.1390906 L15.977,15.139 L15.9770603,20 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                        </svg>
+                    </a>
+                </div>
+            
+                <!-- secondary nav -->
+                <!-- <div class="hidden md:flex items-center space-x-4">
+                    <a class="py-1 mx-3 text-gray-800 border-b-2 border-gray-800" href="/" aria-current="page">Work</a>
+                    <a class="py-1 mx-3 text-gray-800 border-transparent transition hover: border-b-2 hover:border-gray-800 hover: duration-150" href="/about">About</a>
+                </div> -->
+            
+                <!-- mobile button goes here -->
+                <!-- <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
-                </a>
-            </div>
-        
-            <!-- secondary nav -->
-            <div class="hidden md:flex items-center space-x-4">
-                <a class="py-1 mx-3 text-gray-800 border-b-2 border-gray-800" href="/" aria-current="page">Work</a>
-                <a class="py-1 mx-3 text-gray-800 border-transparent transition hover: border-b-2 hover:border-gray-800 hover: duration-150" href="/about">About</a>
-            </div>
-        
-            <!-- mobile button goes here -->
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-button">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-                </button>
-            </div>
+                    </button>
+                </div> -->
             </div>
         </div>
         
         <!-- mobile menu -->
-        <div id="mobile-menu" class= "hidden md:hidden pt-5 rounded-md divide-y divide-slate-100 px-10">
+        <!-- <div id="mobile-menu" class= "hidden md:hidden pt-5 rounded-md divide-y divide-slate-100 px-10">
             <a href="/" class="flex flex-row py-6 items-center justify-center font-bold text-sm hover:bg-slate-100">
                 <p class="mr-2">&#128187;</p>
                 Work
@@ -67,12 +67,17 @@
                 <p class="mr-2">&#128075;</p>
                 About
             </a>
-        </div>
+        </div> -->
     </nav>
     <div class="max-w-6xl mx-auto px-16">
         <div class="mt-12 py-12 mx-auto w-11/12 md:w-3/4">
             <h1 class="text-3xl md:text-4xl font-robo" >Together App - Building a Better Learning Community for College Students</h1>
-            <p class="mt-3 text-base font-inter text-gray-700 leading-relaxed">In this Capstone project at CMU, we partnered with Virginia Tech's Provost Office to improve the accessibility and effectiveness of undergraduate tutoring services in science and engineering calculus courses from January 2017 to August 2017. As the Design Lead, I collaborated with one developer, one researcher, and one project manager to deliver Together, a mobile app that enhances peer-learning and tutoring experiences in calculus.</p>
+            <div class="mt-6 flex space-x-2">
+                <span class="inline-flex items-center rounded-full bg-purple-50 px-2 py-1 text-xs font-medium text-gray-600 border border-gray-200">Education</span>
+                <span class="inline-flex items-center rounded-full bg-purple-50 px-2 py-1 text-xs font-medium text-gray-600 border border-gray-200">2017</span>
+                <span class="inline-flex items-center rounded-full bg-purple-50 px-2 py-1 text-xs font-medium text-gray-600 border border-gray-200">Carnegie Mellon</span>
+            </div>
+            <p class="mt-6 text-base font-inter text-gray-700 leading-relaxed">In this Capstone project at CMU, we partnered with Virginia Tech's Provost Office to improve the accessibility and effectiveness of undergraduate tutoring services in science and engineering calculus courses from January 2017 to August 2017. As the Design Lead, I collaborated with one developer, one researcher, and one project manager to deliver Together, a mobile app that enhances peer-learning and tutoring experiences in calculus.</p>
         </div>
     </div>
     <div class="w-full h-auto bg-gray-50">
@@ -261,7 +266,7 @@
         </div>    
     </div>
     <footer class="py-6 relative inset-x-0 bottom-0"> 
-        <p class="text-center text-xs lg:text-sm text-gray-700 ">© 2023 Junyu Huang. Built with <a class="underline font-medium bg-transparent text-gray-900 decoration-amber-300 decoration-2 underline-offset-2 transition duration-300 hover:bg-amber-300" href="https://tailwindcss.com/" target="_blank">Tailwind</a>.</p>
+        <p class="text-center text-xs lg:text-sm text-gray-700 ">© 2024 Junyu Huang. Built with <a class="underline font-medium bg-transparent text-gray-900 decoration-amber-300 decoration-2 underline-offset-2 transition duration-300 hover:bg-amber-300" href="https://tailwindcss.com/" target="_blank">Tailwind</a>.</p>
     </footer>
 </body>
 <script src="script.js"></script>
